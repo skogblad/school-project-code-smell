@@ -42,7 +42,7 @@ export async function createHtml() {
       textDiv.appendChild(linkPlacement);
     }
     function createImg() {
-      const imgPlacement = document.createElement("IMG");
+      const imgPlacement = document.createElement("img");
       imgPlacement.setAttribute("src", podCasts.programs[i].socialimage);
       imgPlacement.setAttribute("width", "100");
       imgPlacement.setAttribute("height", "100");
@@ -51,6 +51,7 @@ export async function createHtml() {
 
     function createP() {
       const descPlacement = document.createElement("p");
+      descPlacement.setAttribute("class", "section__article-paragraph")
       const desc = document.createTextNode(podCasts.programs[i].description);
       descPlacement.appendChild(desc);
       textDiv.appendChild(descPlacement);
