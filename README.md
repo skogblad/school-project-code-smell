@@ -5,8 +5,8 @@ G
 - [ ] Enhetlig namngivning i CSS:en
 - [x] Konvertera till TypeScript
 - [x] Enhetlig kodkvalitet
-- [ ] Mobilvyn
-- [ ] Språk
+- [x] Mobilvyn
+- [x] Språk
 - [ ] Rensa loggning
 - [ ] Dokumentation
 - [ ] Tillgänglighet (bilder)
