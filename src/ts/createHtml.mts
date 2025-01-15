@@ -1,4 +1,4 @@
-import { getPodcasts } from "./api";
+import { getPodcasts } from "./api.mts";
 
 const podCastContainer = document.querySelector(".section__podlist-pods");
 
@@ -22,7 +22,7 @@ export async function createHtml() {
       const innerArticle = document.createElement("article");
       innerArticle.setAttribute("class", "section__article-innerarticle");
       innerArticle.setAttribute("tabindex", "1");
-      podCastContainer.appendChild(innerArticle);
+      (podCastContainer as HTMLElement).appendChild(innerArticle);
       return innerArticle;
     }
 
