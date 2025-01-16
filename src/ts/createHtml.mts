@@ -37,6 +37,7 @@ function createImg(parent: HTMLElement, src: string) {
   imgPlacement.setAttribute("src", src);
   imgPlacement.setAttribute("width", "100");
   imgPlacement.setAttribute("height", "100");
+  imgPlacement.setAttribute("alt", "Podcastens omslagsbild");
   parent.appendChild(imgPlacement);
 }
 
