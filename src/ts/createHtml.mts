@@ -1,6 +1,6 @@
 import { getPodcasts } from "./api.mts";
 
-const podCastContainer = document.querySelector(".section__podlist-pods");
+const podCastContainer = document.querySelector(".podlist-container");
 
 let i = 0;
 
@@ -20,7 +20,7 @@ export async function createHtml() {
 
     function createInnerArticle() {
       const innerArticle = document.createElement("article");
-      innerArticle.setAttribute("class", "section__article-innerarticle");
+      innerArticle.setAttribute("class", "postcast-container");
       innerArticle.setAttribute("tabindex", "1");
       (podCastContainer as HTMLElement).appendChild(innerArticle);
       return innerArticle;
@@ -28,7 +28,7 @@ export async function createHtml() {
 
     function createTextDiv() {
       const textDiv = document.createElement("div");
-      textDiv.setAttribute("class", "section__article-div");
+      textDiv.setAttribute("class", "podcast-text-container");
       innerArticle.appendChild(textDiv);
       return textDiv;
     }
@@ -51,7 +51,7 @@ export async function createHtml() {
 
     function createP() {
       const descPlacement = document.createElement("p");
-      descPlacement.setAttribute("class", "section__article-paragraph")
+      descPlacement.setAttribute("class", "podcast-description")
       const desc = document.createTextNode(podCasts.programs[i].description);
       descPlacement.appendChild(desc);
       textDiv.appendChild(descPlacement);
