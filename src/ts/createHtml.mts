@@ -1,11 +1,18 @@
 import { getPodcasts } from "./api.mts";
 
+interface IProgram {
+  socialimage: string;
+  name: string;
+  description: string;
+  programurl: string;
+}
+
 const podCastContainer = document.querySelector(".podlist-container") as HTMLElement;
 
 export async function createHtml() {
   const podCasts = await getPodcasts();
 
-  podCasts.programs.forEach((program) => {
+  podCasts.programs.forEach((program: IProgram) => {
     const innerArticle = createInnerArticle();
 
     createImg(innerArticle, program.socialimage);
