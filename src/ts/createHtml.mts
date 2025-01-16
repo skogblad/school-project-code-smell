@@ -32,6 +32,14 @@ function createInnerArticle() {
   return innerArticle;
 }
 
+function createImg(parent: HTMLElement, src: string) {
+  const imgPlacement = document.createElement("img");
+  imgPlacement.setAttribute("src", src);
+  imgPlacement.setAttribute("width", "100");
+  imgPlacement.setAttribute("height", "100");
+  parent.appendChild(imgPlacement);
+}
+
 function createTextDiv(parent: HTMLElement) {
   const textDiv = document.createElement("div");
   textDiv.setAttribute("class", "podcast-text-container");
@@ -39,20 +47,11 @@ function createTextDiv(parent: HTMLElement) {
   return textDiv;
 }
 
-function createLink(parent: HTMLElement, url: string) {
-  const linkPlacement = document.createElement("a");
-  const linkText = document.createTextNode("Lyssna här");
-  linkPlacement.setAttribute("href", url);
-  linkPlacement.appendChild(linkText);
-  parent.appendChild(linkPlacement);
-}
-
-function createImg(parent: HTMLElement, src: string) {
-  const imgPlacement = document.createElement("img");
-  imgPlacement.setAttribute("src", src);
-  imgPlacement.setAttribute("width", "100");
-  imgPlacement.setAttribute("height", "100");
-  parent.appendChild(imgPlacement);
+function createHeader(parent: HTMLElement, name: string) {
+  const headerPlacement = document.createElement("h2");
+  const programName = document.createTextNode(name);
+  headerPlacement.appendChild(programName);
+  parent.appendChild(headerPlacement);
 }
 
 function createP(parent: HTMLElement, text: string) {
@@ -63,11 +62,12 @@ function createP(parent: HTMLElement, text: string) {
   parent.appendChild(descPlacement);
 }
 
-function createHeader(parent: HTMLElement, name: string) {
-  const headerPlacement = document.createElement("h2");
-  const programName = document.createTextNode(name);
-  headerPlacement.appendChild(programName);
-  parent.appendChild(headerPlacement);
+function createLink(parent: HTMLElement, url: string) {
+  const linkPlacement = document.createElement("a");
+  const linkText = document.createTextNode("Lyssna här");
+  linkPlacement.setAttribute("href", url);
+  linkPlacement.appendChild(linkText);
+  parent.appendChild(linkPlacement);
 }
 
 export default createHtml;
