@@ -57,7 +57,7 @@ We learned to dig deeper into someone ells code for improvment and recognize/ el
 - [x] Do an accessibility review of the page
 - [x] Use features in Sass for the CSS
 - [x] Remove unused packages
-- [ ] Handle errors in the API call
+- [x] Handle errors in the API call
 - [ ] Do a Lighthouse report
 - [ ] ⭐ Read the development environment
 - [x] ⭐ Uniform syntax in CSS
