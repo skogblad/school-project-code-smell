@@ -54,7 +54,7 @@ We learned to dig deeper into someone ells code for improvment and recognize/ el
 
 - [ ] Right thing in right place
 - [ ] Manage logging efficiently
-- [ ] Do an accessibility review of the page
+- [x] Do an accessibility review of the page
 - [x] Use features in Sass for the CSS
 - [ ] Remove unused packages
 - [ ] Handle errors in the API call

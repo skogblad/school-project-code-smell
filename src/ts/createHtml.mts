@@ -37,7 +37,7 @@ function createPodcastImg(parent: HTMLElement, src: string) {
   podcastImg.setAttribute("src", src);
   podcastImg.setAttribute("width", "100");
   podcastImg.setAttribute("height", "100");
-  podcastImg.setAttribute("alt", "Podcastens omslagsbild");
+  podcastImg.setAttribute("alt", "Omslag för podcast");
   parent.appendChild(podcastImg);
 }
 
