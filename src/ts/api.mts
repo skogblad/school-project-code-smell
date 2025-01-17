@@ -6,6 +6,7 @@ export async function getPodcasts() {
     .then((json) => json)
     .catch((error) => {
       console.error("nått blev fel:", error);
+      alert("Error! Ett fel har uppstått och SRs Humorprogram kan ej läsas in.");
       return null;
     });
 }
