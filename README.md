@@ -42,7 +42,7 @@ We learned to dig deeper into someone ells code for improvment and recognize/ el
 - [x] Consistent code quality
 - [x] Mobil view
 - [x] Language
-- [ ] Clear log
+- [x] Clear log
 - [x] Documentation
 - [x] A11y (pictures)
 - [x] Refactor functions
@@ -53,10 +53,10 @@ We learned to dig deeper into someone ells code for improvment and recognize/ el
 ### VG
 
 - [ ] Right thing in right place
-- [ ] Manage logging efficiently
+- [-] Manage logging efficiently
 - [x] Do an accessibility review of the page
 - [x] Use features in Sass for the CSS
-- [ ] Remove unused packages
+- [x] Remove unused packages
 - [ ] Handle errors in the API call
 - [ ] Do a Lighthouse report
 - [ ] ⭐ Read the development environment
