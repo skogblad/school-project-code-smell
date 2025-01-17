@@ -52,8 +52,8 @@ We learned to dig deeper into someone ells code for improvment and recognize/ el
 
 ### VG
 
-- [ ] Right thing in right place
-- [-] Manage logging efficiently
+- [x] Right thing in right place
+- [ ] Manage logging efficiently
 - [x] Do an accessibility review of the page
 - [x] Use features in Sass for the CSS
 - [x] Remove unused packages
