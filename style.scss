@@ -1,11 +1,13 @@
+@import "/src/sass/variables";
+
 body {
   font-family: "Source Sans Pro", sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: $lightGrey;
+  background-color: $darkBrown;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -30,10 +32,10 @@ body {
     margin-bottom: 2rem;
 
     .podcast-text-container {
-    display: inline-flex;
-    flex-direction: column;
-    margin-top: 0;
-    margin-left: 1rem;
+      display: inline-flex;
+      flex-direction: column;
+      margin-top: 0;
+      margin-left: 1rem;
 
       h2 {
         font-size: 1.25rem;
@@ -48,27 +50,27 @@ body {
   }
 
   a {
-    color: rgba(255, 255, 255, 0.87);
+    color: $lightGrey;
     cursor: pointer;
   }
 
   a :active,
   a:hover {
-    color: rgb(85, 85, 218);
+    color: $purple;
   }
 }
 
 .darkmode {
-  background-color: antiquewhite;
-  color: #242424;
+  background-color: $lightBeige;
+  color: $darkBrown;
   
   a {
-  color: #242424;
+    color: $darkBrown;
   }
 
   a :active,
   a:hover {
-    color: rgb(85, 85, 218);
+    color: $purple;
   }
 }
 
