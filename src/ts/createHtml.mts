@@ -7,9 +7,7 @@ interface IProgram {
   programurl: string;
 }
 
-const podlistContainer = document.querySelector(
-  ".podlist-container",
-) as HTMLElement;
+const podlistContainer = document.querySelector(".podlist-container") as HTMLElement;
 
 export async function createHtml() {
   const podcasts = await getPodcasts();
