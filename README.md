@@ -2,7 +2,7 @@
 
 In this project, which was an assignment during my front end education at Medieinstitutet, we were given the task to fix and refactor the code of a broken project. The project itself is a webpage displaying different podcasts from SR.
 
-We learn to dig deeper into someone ells code for improvment and recognize/ eliminate code smells.
+We learned to dig deeper into someone ells code for improvment and recognize/ eliminate code smells.
 
 ## Screenshots
 
