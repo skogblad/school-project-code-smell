@@ -11,8 +11,8 @@ G
 - [ ] Dokumentation
 - [x] Tillgänglighet (bilder)
 - [x] Refaktorera funktioner
-- [ ] Eliminera onödig kod
-- [ ] Rensa bort kod som inte ska sättas
+- [x] Eliminera onödig kod
+- [x] Rensa bort kod som inte ska sättas
 - [x] Refaktorera namngivning
 
 VG
