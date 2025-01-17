@@ -4,6 +4,10 @@ In this project, which was an assignment during my front end education at Mediei
 
 We learn to dig deeper into someone ells code for improvment and recognize/ eliminate code smells.
 
+## Screenshots
+
+![Screenshot desktop](screenshot.jpg)
+
 ## Tech Stack
 
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
@@ -26,10 +30,6 @@ We learn to dig deeper into someone ells code for improvment and recognize/ elim
   pnpm install
   pnpm run dev
 ```
-
-## Screenshots
-
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
 ## Grading criteria
 
