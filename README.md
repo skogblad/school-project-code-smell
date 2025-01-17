@@ -6,7 +6,7 @@ We learn to dig deeper into someone ells code for improvment and recognize/ elim
 
 ## Screenshots
 
-![Screenshot desktop](screenshot.jpg)
+![screenshot](https://github.com/user-attachments/assets/e9e55b12-658f-4971-9381-6a1d39be94b1)
 
 ## Tech Stack
 
@@ -33,7 +33,7 @@ We learn to dig deeper into someone ells code for improvment and recognize/ elim
 
 ## Grading criteria
 
-G
+### G
 
 - [x] Make the project work
 - [x] CSS to Sass
@@ -50,7 +50,7 @@ G
 - [x] Clear code that should not be set
 - [x] Refactor naming
 
-VG
+### VG
 
 - [ ] Right thing in right place
 - [ ] Manage logging efficiently
