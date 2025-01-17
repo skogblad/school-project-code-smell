@@ -58,7 +58,7 @@ We learned to dig deeper into someone ells code for improvment and recognize/ el
 - [x] Use features in Sass for the CSS
 - [x] Remove unused packages
 - [x] Handle errors in the API call
-- [ ] Do a Lighthouse report
+- [x] Do a Lighthouse report
 - [ ] ⭐ Read the development environment
 - [x] ⭐ Uniform syntax in CSS
 - [ ] ⭐ Publish the page on GitHub pages
