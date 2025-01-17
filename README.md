@@ -13,6 +13,7 @@ G
 - [x] Refaktorera funktioner
 - [ ] Eliminera onödig kod
 - [ ] Rensa bort kod som inte ska sättas
+- [x] Refaktorera namngivning
 
 VG
 

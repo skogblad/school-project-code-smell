@@ -7,68 +7,68 @@ interface IProgram {
   programurl: string;
 }
 
-const podCastContainer = document.querySelector(".podlist-container") as HTMLElement;
+const podlistContainer = document.querySelector(".podlist-container") as HTMLElement;
 
 export async function createHtml() {
-  const podCasts = await getPodcasts();
+  const podcasts = await getPodcasts();
 
-  podCasts.programs.forEach((program: IProgram) => {
-    const innerArticle = createInnerArticle();
+  podcasts.programs.forEach((program: IProgram) => {
+    const podcastContainer = createPodcastContainer();
 
-    createImg(innerArticle, program.socialimage);
+    createPodcastImg(podcastContainer, program.socialimage);
 
-    const textDiv = createTextDiv(innerArticle);
+    const podcastTextContainer = createPodcastTextContainer(podcastContainer);
 
-    createHeader(textDiv, program.name);
-    createP(textDiv, program.description);
-    createLink(textDiv, program.programurl);
+    createPodcastTitle(podcastTextContainer, program.name);
+    createPodcastDescription(podcastTextContainer, program.description);
+    createPodcastLink(podcastTextContainer, program.programurl);
   });
 }
 
-function createInnerArticle() {
-  const innerArticle = document.createElement("article");
-  innerArticle.setAttribute("class", "postcast-container");
-  podCastContainer.appendChild(innerArticle);
-  return innerArticle;
+function createPodcastContainer() {
+  const podcastContainer = document.createElement("article");
+  podcastContainer.setAttribute("class", "postcast-container");
+  podlistContainer.appendChild(podcastContainer);
+  return podcastContainer;
 }
 
-function createImg(parent: HTMLElement, src: string) {
-  const imgPlacement = document.createElement("img");
-  imgPlacement.setAttribute("src", src);
-  imgPlacement.setAttribute("width", "100");
-  imgPlacement.setAttribute("height", "100");
-  imgPlacement.setAttribute("alt", "Podcastens omslagsbild");
-  parent.appendChild(imgPlacement);
+function createPodcastImg(parent: HTMLElement, src: string) {
+  const podcastImg = document.createElement("img");
+  podcastImg.setAttribute("src", src);
+  podcastImg.setAttribute("width", "100");
+  podcastImg.setAttribute("height", "100");
+  podcastImg.setAttribute("alt", "Podcastens omslagsbild");
+  parent.appendChild(podcastImg);
 }
 
-function createTextDiv(parent: HTMLElement) {
-  const textDiv = document.createElement("div");
-  textDiv.setAttribute("class", "podcast-text-container");
-  parent.appendChild(textDiv);
-  return textDiv;
+function createPodcastTextContainer(parent: HTMLElement) {
+  const podcastTextContainer = document.createElement("div");
+  podcastTextContainer.setAttribute("class", "podcast-text-container");
+  parent.appendChild(podcastTextContainer);
+  return podcastTextContainer;
 }
 
-function createHeader(parent: HTMLElement, name: string) {
-  const headerPlacement = document.createElement("h2");
+function createPodcastTitle(parent: HTMLElement, name: string) {
+  const podcastTitle = document.createElement("h2");
   const programName = document.createTextNode(name);
-  headerPlacement.appendChild(programName);
-  parent.appendChild(headerPlacement);
+  podcastTitle.appendChild(programName);
+  parent.appendChild(podcastTitle);
 }
 
-function createP(parent: HTMLElement, text: string) {
-  const descPlacement = document.createElement("p");
-  descPlacement.setAttribute("class", "podcast-description")
-  const desc = document.createTextNode(text);
-  descPlacement.appendChild(desc);
-  parent.appendChild(descPlacement);
+function createPodcastDescription(parent: HTMLElement, text: string) {
+  const podcastDescription = document.createElement("p");
+  podcastDescription.setAttribute("class", "podcast-description")
+  const programDescription = document.createTextNode(text);
+  podcastDescription.appendChild(programDescription);
+  parent.appendChild(podcastDescription);
 }
 
-function createLink(parent: HTMLElement, url: string) {
-  const linkPlacement = document.createElement("a");
+function createPodcastLink(parent: HTMLElement, url: string) {
+  const podcastLink = document.createElement("a");
   const linkText = document.createTextNode("Lyssna här");
-  linkPlacement.setAttribute("href", url);
-  linkPlacement.appendChild(linkText);
-  parent.appendChild(linkPlacement);
+  podcastLink.setAttribute("href", url);
+  podcastLink.appendChild(linkText);
+  parent.appendChild(podcastLink);
 }
 
 export default createHtml;
