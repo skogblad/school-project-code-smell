@@ -7,7 +7,9 @@ interface IProgram {
   programurl: string;
 }
 
-const podlistContainer = document.querySelector(".podlist-container") as HTMLElement;
+const podlistContainer = document.querySelector(
+  ".podlist-container",
+) as HTMLElement;
 
 export async function createHtml() {
   const podcasts = await getPodcasts();
@@ -57,7 +59,7 @@ function createPodcastTitle(parent: HTMLElement, name: string) {
 
 function createPodcastDescription(parent: HTMLElement, text: string) {
   const podcastDescription = document.createElement("p");
-  podcastDescription.setAttribute("class", "podcast-description")
+  podcastDescription.setAttribute("class", "podcast-description");
   const programDescription = document.createTextNode(text);
   podcastDescription.appendChild(programDescription);
   parent.appendChild(podcastDescription);
