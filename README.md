@@ -43,7 +43,7 @@ We learned to dig deeper into someone ells code for improvment and recognize/ el
 - [x] Mobil view
 - [x] Language
 - [ ] Clear log
-- [ ] Documentation
+- [x] Documentation
 - [x] A11y (pictures)
 - [x] Refactor functions
 - [x] Eliminate unnecessary code
@@ -55,10 +55,10 @@ We learned to dig deeper into someone ells code for improvment and recognize/ el
 - [ ] Right thing in right place
 - [ ] Manage logging efficiently
 - [ ] Do an accessibility review of the page
-- [ ] Use features in Sass for the CSS
+- [x] Use features in Sass for the CSS
 - [ ] Remove unused packages
 - [ ] Handle errors in the API call
 - [ ] Do a Lighthouse report
 - [ ] ⭐ Read the development environment
-- [ ] ⭐ Uniform syntax in CSS
+- [x] ⭐ Uniform syntax in CSS
 - [ ] ⭐ Publish the page on GitHub pages
