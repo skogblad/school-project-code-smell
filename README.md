@@ -61,4 +61,4 @@ We learned to dig deeper into someone ells code for improvment and recognize/ el
 - [x] Do a Lighthouse report
 - [ ] ⭐ Read the development environment
 - [x] ⭐ Uniform syntax in CSS
-- [X] ⭐ Publish the page on GitHub pages (?)
+- [x] ⭐ Publish the page on GitHub pages (?)
