@@ -32,9 +32,6 @@ We learned to dig deeper into someone ells code for improvment and recognize/ el
 ```
 
 ## Grading criteria
-
-### G
-
 - [x] Make the project work
 - [x] CSS to Sass
 - [x] Consistent naming in CSS
@@ -49,9 +46,7 @@ We learned to dig deeper into someone ells code for improvment and recognize/ el
 - [x] Eliminate unnecessary code
 - [x] Clear code that should not be set
 - [x] Refactor naming
-
-### VG
-
+---------
 - [x] Right thing in right place
 - [ ] Manage logging efficiently
 - [x] Do an accessibility review of the page
