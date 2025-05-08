@@ -44,6 +44,8 @@ jobs:
         run: pnpm install
       - name: Build with Vite
         run: pnpm build
+        env:
+          VITE_APP_API_STORAGE_LINK: ${{ secrets.VITE_APP_API_STORAGE_LINK }}
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
